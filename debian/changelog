@@ -1,5 +1,32 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-cloudflare-go-metrics (0.0~git20151117.0.6a9aea3-4) unstable; urgency=medium
 
-  * Initial release
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Change priority extra to priority optional.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Fri, 01 Jul 2022 00:27:58 +0100
+
+golang-github-cloudflare-go-metrics (0.0~git20151117.0.6a9aea3-3) unstable; urgency=medium
+
+  * Team upload
+  * Depend on golang-github-rcrowley-go-metrics-dev
+
+ -- Mpampis Kostas <charkost.rb@gmail.com>  Tue, 13 Mar 2018 14:28:17 +0200
+
+golang-github-cloudflare-go-metrics (0.0~git20151117.0.6a9aea3-2) unstable; urgency=medium
+
+  * Replace golang-go with golang-any in Build-Depends, remove golang-go from
+    Depends
+
+ -- Konstantinos Margaritis <markos@debian.org>  Tue, 08 Aug 2017 18:19:54 +0300
+
+golang-github-cloudflare-go-metrics (0.0~git20151117.0.6a9aea3-1) unstable; urgency=medium
+
+  * Initial release (Closes: #847824)
+
+ -- Tim Potter <tpot@hpe.com>  Thu, 03 Nov 2016 14:18:08 +1100
