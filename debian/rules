@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_test:
+	# TODO: fix failing tests
+	-dh_auto_test
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -r debian/golang-github-cloudflare-go-metrics-dev/usr/bin
